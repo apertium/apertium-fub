@@ -1,0 +1,10 @@
+{
+    "analysis": {
+        "input": "analysis-input.txt",
+        "mode": "fub-disam"
+    },
+    "generation": {
+        "input": "generation-input.txt",
+        "mode": "fub-gener"
+    }
+}
