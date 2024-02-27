@@ -95,7 +95,7 @@ LEXICON Punctuation
 PATTERNS
 VerbRoot VerbInfl 
 NounInfl'Be(1) NounRoot'Be NounInfl'Be(2)
-NounRootNgal NounInflNgal 
+# NounRootNgal NounInflNgal 
 
 LEXICON VerbRoot
 'daan{ugo} # to sleep
@@ -114,23 +114,23 @@ LEXICON VerbInfl
 <v><pres><p3><sg>:s
 
 LEXICON NounRoot'Be
-Amerikaajo:Amerika{a}[cl'be, jo, 'en] # American
-baabiraawo:baabiraa{w}[cl'be, o, 'be] # father
-debbo:de{b}{b}[cl'be, o, 'be] # woman
-gorko:gor{k}[cl'be, o, 'be] # man, husband
-Hawsaajo:Hawsa{a}[cl'en, jo, 'en] # Hausa person
-ko'do:ko{'}{d}[cl'be, o, 'be] # stranger, guest
-maw'do:maw{'}{d}[cl'be, o, 'be] # big one, adult
-mallumjo:mallum[cl'be, jo, 'en] # teacher
-modibbo:modi{b}{b}[cl'be, o, 'be] # learned man, high teacher
-moyjo:moy[cl'be, jo, 'en] # type of person
-nayeejo:naye{e}[cl'be, jo, 'en] # old man
-ndottiijo:ndotti{i}[cl'be, jo, 'en] # respectable man over 35
-pukaraajo:pukaraa[cl'be, jo, 'be] # student. could this just be classified as an o form and replace the o, ignoring the j before and removing it like the other nouns?
-Pullo:Pul{l}[cl'be, o, 'be] # Fulani
+Amerikaajo:Amerika{a}[cl'be,jo,'en] # American
+baabiraawo:baabiraa{w}[cl'be,o,'be] # father
+debbo:de{b}{b}[cl'be,o,'be] # woman
+gorko:gor{k}[cl'be,o,'be] # man, husband
+Hawsaajo:Hawsa{a}[cl'en,jo,'en] # Hausa person
+ko'do:ko{'}{d}[cl'be,o,'be] # stranger, guest
+maw'do:maw{'}{d}[cl'be,o,'be] # big one, adult
+mallumjo:mallum[cl'be,jo,'en] # teacher
+modibbo:modi{b}{b}[cl'be,o,'be] # learned man, high teacher
+moyjo:moy[cl'be,jo,'en] # type of person
+nayeejo:naye{e}[cl'be,jo,'en] # old man
+ndottiijo:ndotti{i}[cl'be,jo,'en] # respectable man over 35
+pukaraajo:pukaraa[cl'be,jo,'be] # student. could this just be classified as an o form and replace the o, ignoring the j before and removing it like the other nouns?
+Pullo:Pul{l}[cl'be,o,'be] # Fulani
 
 
-LEXICON NounInfl'Be(1)
+# LEXICON NounInfl'Be(1)
 
 
 LEXICON NounInfl'Be(2)
