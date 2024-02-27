@@ -1,17 +1,33 @@
 Alphabet
- A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z
- a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
+ A B Ɓ D Ɗ E F G H I J K L M N Ŋ O P R S T U W Y Ƴ
+ a b ɓ d ɗ e f g h i j k l m n ŋ o p r s t u w y ƴ '
+ %{a%}:0 %{a%}:a
+ %{b%}:0 %{b%}:b
+ %{d%}:0 %{d%}:d
+ %{e%}:0 %{e%}:e
+ %{i%}:0 %{i%}:i
+ %{k%}:0 %{k%}:k
+ %{l%}:0 %{l%}:l
+ %{plural%}:0
+ p:f
+ k:h
+ d:r
+ c:s 
+ b:w
  %{A%}:a %>:0  ;
 
 Sets
 
-Vowel = A E Ä I O Ö U Ü Y Ý
-        a e ä i o ö u ü y ý ;
+Vowel = A E I O U
+        a e i o u ;
 
 Rules
 
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+"Plural 'be class prefixer"
+c1:c2 <=> %{plural%}:0 _ ;
+where c1 in ( d k p c b )
+      c2 in ( r h f s w )
+matched ;
 
 ! Resources:
 ! https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
