@@ -6,9 +6,12 @@ Alphabet
  %{d%}:0 %{d%}:d
  %{e%}:0 %{e%}:e
  %{i%}:0 %{i%}:i
+  %{j%}:0 %{j%}:w
  %{k%}:0 %{k%}:k
  %{l%}:0 %{l%}:l
+ %{w%}:0 %{w%}:w
  %{plural%}:0
+ %{cl%_be%}:0
  p:f
  k:h
  d:r
@@ -24,7 +27,7 @@ Vowel = A E I O U
 Rules
 
 "Plural 'be class prefixer"
-c1:c2 <=> %{plural%}:0 _ ;
+c1:c2 <=> %{cl%_be%}:0 %{plural%}:0 _ ;
 where c1 in ( d k p c b )
       c2 in ( r h f s w )
 matched ;
