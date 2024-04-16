@@ -14,6 +14,9 @@ REMOVE (n) OR (v) IF (1 (n sg)) ;
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 # SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
+# used for finding the negation construction for naa
+SELECT (neg) IF (1*/ (prn mfn)) ;
+
 
 
 # Resources:

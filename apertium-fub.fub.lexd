@@ -94,17 +94,21 @@ LEXICON Punctuation
 
 PATTERNS
 VerbRoot VerbInfl 
-NounInfl'Be(1) NounRoot'Be NounInfl'Be(2)
-# NounRootNgal NounInflNgal 
+NounInfl_ɓe(1) NounRoot_ɓe NounInfl_ɓe(2)
+# NounRoot_ngal NounInfl_ngal 
+IrregularNoun
+Pronoun
+AdjRoot # AdjInfl_ɓe
+FunctionWords
 
 LEXICON VerbRoot
-'daan{ugo} # to sleep
-'yam{ugo} # to ask
 'acc{ugo} # to leave, leave off, let go
 andin{ugo} # to inform, tell
 and{ugo} # to know
 buut{ugo} # to be inexpensive
 dar{ugo} # to stand, stop
+dill{ugo} # to go, to go away
+ɗaan{ugo} # to sleep
 jood'{ugo} # to sit, dwell, reside
 nyaam{ugo} # to eat
 roond{ugo} # to carry (a load on head)
@@ -112,65 +116,109 @@ sood{ugo} # to buy
 waal{ugo} # to lie down, spend the night
 wind{ugo} # to buy
 yett{ugo} # to thank
+ƴam{ugo} # to ask
 
 
 LEXICON VerbInfl
-<v><pres>:
-<v><pres><p3><sg>:s
+ugo<v><inf>:ugo
 
-LEXICON NounRoot'Be
-'dumeejo:dume{e}[cl_be,jo,'en] # what nationality
-Amerikaajo:Amerika{a}[cl_be,jo,'en] # American
-baabiraawo:baabiraa{w}[cl_be,o,'be] # father
-bandiraawo:bandiraa[cl_be,o,'be] # blood relative
-daadiraawo:daadiraa[cl_be,o,'be] # mother
-dewer'diraawo:dewer'diraa{w}[cl_be,o,'be] # sibling, brother, sister
-esiraawo:esiraa{w}[cl_be,o,'be] # in-law
-go'd'do:go'd'{d}[cl_be,o,'be] # someone
-gorko:gor{k}[cl_be,o,'be] # man, husband
-Hawsaajo:Hawsa{a}[cl_be,jo,'en] # Hausa person
-jawmu:jawmu[cl_be,jo,'en] # owner, master
-laamii'do:laamii{'}{d}[cl_be,o,'be] # king, emir
-maamiraawo:maamiraa{w}[cl_be,o,'be] # grandparent, grandfather, grandmother
-mallumjo:mallum[cl_be,jo,'en] # teacher
-maw'do:maw{'}{d}[cl_be,o,'be] # a big one, adult
-mawniraawo:mawniraa{w}[cl_be,o,'be] # older sibling
-minyiraawo:minyiraa{w}[cl_be,o,'be] # younger sibling
-moyjo:moy[cl_be,jo,'en] # what type of person
-nayeejo:naye{e}[cl_be,jo,'en] # old man
-ndottiijo:ndotti{i}[cl_be,jo,'en] # respected man
-pukaraajo:pukaraa{j}[cl_be,o,'be] # student
-Pullo:Pul{l}[cl_be,o,'be] # Fulani
-soobaajo:soobaa[cl_be,jo,'en] # friend
-taaniraawo:taaniraa{w}[cl_be,o,'be] # grandchild
-tinii'do:tinii{'}{d}[cl_be,o,'be] # zealous person
+LEXICON NounRoot_ɓe
+Amerikaajo:Amerika{a}[cl_ɓe,jo,'en] # American
+baabiraawo:baabiraa{w}[cl_ɓe,o,ɓe] # father
+bandiraawo:bandiraa[cl_ɓe,o,ɓe] # blood relative
+daadiraawo:daadiraa[cl_ɓe,o,ɓe] # mother
+dewerɗiraawo:dewerɗiraa{w}[cl_ɓe,o,ɓe] # sibling, brother, sister
+ɗumeejo:dume{e}[cl_ɓe,jo,'en] # what nationality
+esiraawo:esiraa{w}[cl_ɓe,o,ɓe] # in-law
+goɗɗo:goɗ{ɗ}[cl_ɓe,o,ɓe] # someone
+gorko:gor{k}[cl_ɓe,o,ɓe] # man, husband
+Hawsaajo:Hawsa{a}[cl_ɓe,jo,'en] # Hausa person
+jawmu:jawmu[cl_ɓe,jo,'en] # owner, master
+laamiiɗo:laamii{ɗ}[cl_ɓe,o,ɓe] # king, emir
+maamiraawo:maamiraa{w}[cl_ɓe,o,ɓe] # grandparent, grandfather, grandmother
+mallumjo:mallum[cl_ɓe,jo,'en] # teacher
+mawɗo:maw{ɗ}[cl_ɓe,o,ɓe] # a big one, adult
+mawniraawo:mawniraa{w}[cl_ɓe,o,ɓe] # older sibling
+minyiraawo:minyiraa{w}[cl_ɓe,o,ɓe] # younger sibling
+moyjo:moy[cl_ɓe,jo,'en] # what type of person
+nawliraawo:nawliraa{w}[cl_ɓe,o,ɓe] # co-wife
+nayeejo:naye{e}[cl_ɓe,jo,'en] # old man
+ndottiijo:ndotti{i}[cl_ɓe,jo,'en] # respected man
+pukaraajo:pukaraa{j}[cl_ɓe,o,ɓe] # student
+Pullo:Pul{l}[cl_ɓe,o,ɓe] # Fulani
+soobaajo:soobaa[cl_ɓe,jo,'en] # friend
+taaniraawo:taaniraa{w}[cl_ɓe,o,ɓe] # grandchild
+tiniiɗo:tinii{ɗ}[cl_ɓe,o,ɓe] # zealous person
 
+LEXICON NounInfl_ɓe(2)
+: <n><cl_ɓe><sg>:o[o]
+: <n><cl_ɓe><sg>:jo[jo]
+:{cl_ɓe}{plural} <n><cl_ɓe><pl>:ɓe[cl_ɓe]
+:{cl_ɓe}{plural} <n><cl_ɓe><pl>:'en[cl_en]
 
-# LEXICON NounInfl'Be(1)
+LEXICON Pronoun
+mi<prn><1p><sg><subj>:mi
+yam<prn><1p><sg><obj>:yam
+am<prn><1p><sg><obj>:am
+a<prn><2p><sg><subj>:a
+ma<prn><2p><sg><obj>:ma
+maa<prn><2p><sg><obj>:maa
+o<prn><3p><sg><subj><mf>:o
+ɗum<prn><3p><subj><mfn>:ɗum
+mo<prn><3p><sg><obj><mf>:mo
+min<prn><1p><pl><excl><subj><obj>:min
+en<prn><1p><pl><incl><subj><obj>:en
+on<prn><2p><pl><subj><obj>:on
+ɓe<prn><3p><pl><subj><obj><mf>:ɓe
+am<prn><pos><p1><sg><px1sg>:am
+maa<prn><pos><p2><sg>:maa
+maa'da<prn><pos><p2><sg>:maa'da
+maako<prn><pos><p3><sg><mf>:maako
+amin<prn><pos><p1><pl><excl>:amin
+meeɗen<prn><pos><p1><pl><incl>:meeɗen
+men<prn><pos><p1><pl><incl>:men
+mooɗon<prn><pos><p2><pl>:mooɗon
+mon<prn><pos><p2><pl>:mon
+maɓɓe<prn><pos><p3><pl><mf>:maɓɓe
+min<prn><1p><sg><emph>:min
+an<prn><2p><sg><emph>:an
+kanko<prn><3p><sg><mf><emph>:kanko
+minin<prn><1p><pl><excl><emph>:minin
+enen<prn><1p><pl><incl><emph>:enen
+onon<prn><2p><pl><emph>:onon
+kamɓe<prn><3p><pl><emph>:kamɓe
+moy<prn><itg>:moy
 
+# fuh
+# locatives dow and les
+# seeing how the 'di class relates to plurals
 
-LEXICON NounInfl'Be(2)
-: <n><cl_be><sg>:o[o]
-: <n><cl_be><sg>:jo[jo]
-:{cl_be}{plural} <n><cl_be><pl>:'be[cl_be]
-:{cl_be}{plural} <n><cl_be><pl>:'en[cl_en]
-
-LEXICON IrregularNouns
-'bii<n><sg>:'bii # offspring, son, daughter
-'bii<n><pl>:'bi'b'be 
+LEXICON IrregularNoun
 baaba<n><sg>:baaba # father
-baaba<n><pl>:baabiraa'be
-bi'd'do<n><sg>:bi'd'do # offspring, son, daughter
-bi'd'do<n><pl>:'bi'b'be 
+baaba<n><pl>:baabiraaɓe
+biɗɗo<n><sg>:biɗɗo # offspring, son, daughter
+biɗɗo<n><pl>:ɓiɓɓe 
+ɓii<n><sg>:ɓii # offspring, son, daughter
+ɓii<n><pl>:ɓiɓɓe 
 daada<n><sg>:daada # mother
-daada<n><pl>:daadiraa'be
+daada<n><pl>:daadiraaɓe
 debbo<n><sg>:debbo # woman, wife
-debbo<n><pl>:rew'be
-ko'do<n><sg>:ko'do # stranger, guest, visitor
-ko'do<n><pl>:ho'b'be 
+debbo<n><pl>:rewɓe
+koɗo<n><sg>:koɗo # stranger, guest, visitor
+koɗo<n><pl>:hoɓɓe 
 modibbo<n><sg>:modibbo # learned person, teacher
-modibbo<n><pl>:modi'b'be
-ne'd'do<n><sg>:ne'd'do # person
-ne'd'do<n><pl>:yim'be
+modibbo<n><pl>:modiɓɓe
+neɗɗo<n><sg>:neɗɗo # person
+neɗɗo<n><pl>:yimɓe
 Tuurankeejo<n><sg>:Tuurankeejo # European, English person
 Tuurankeejo<n><pl>:Tuuranko'en
+
+LEXICON AdjRoot
+peetel<adj>:peetel
+
+# LEXICON AdjInfl_ɓe
+
+LEXICON FunctionWords
+on<emph>:on
+naa<bipol>:naa
+naa<neg>:naa
