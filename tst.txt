@@ -1,0 +1,11 @@
+"<Naa>"
+	"naa" neg SELECT:19
+;	"naa" plr SELECT:19
+"<ɗum>"
+	"ɗum" prn p3 subj mfn
+"<modibbo>"
+	"modibbo" n sg
+"<.>"
+	"." sent
+
+

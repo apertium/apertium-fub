@@ -1,0 +1,10 @@
+"<Naa>"
+	"naa" neg
+;	"naa" plr
+"<ɗum>"
+	"ɗum" prn p3 subj mfn
+"<modibbo>"
+	"modibbo" n sg
+"<.>"
+	"." sent
+

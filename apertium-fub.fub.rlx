@@ -3,6 +3,9 @@ OPTIONS += safe-setparent ;
 DELIMITERS = "<.>" "<?>" "<!>" ;
 
 # We can define sets for common tag clusters
+LIST ɗon = "ɗon" ;
+LIST dow = "dow" ;
+LIST les = "les" ;
 LIST Noun = (n sg) (n pl) ; # A set that matches either a Noun Singular or a Noun Plural
 
 
@@ -14,8 +17,24 @@ REMOVE (n) OR (v) IF (1 (n sg)) ;
 # If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
 # SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
 
-# used for finding the negation construction for naa
-SELECT (neg) IF (1*/ (prn mfn)) ;
+# used for finding the negation construction for naa, choose negative if following word is MFN pronoun
+SELECT (neg) IF (1/* (prn mfn)) ;
+
+# choose polar if at the end of a sentence for naa
+SELECT (plr) IF (1 (sent)) ;
+
+# choose 1st person object pronoun when after a verb with -at suffix
+SELECT (obj) IF (0 (prn)) (-1/* (v fut o_sg1)) ;
+
+# choose continuous if previous word is ɗon
+IFF (pprs) IF (-1/* ɗon) (0C (pprs) OR (sub)) ;
+
+# choose possessive pronoun if after dow or les
+SELECT (pos) IF (-1C dow OR les) (0 (prn)) ;
+
+# needed for ko and too
+# see if anything can be done about haɓɓere gawri (takes nde class out of nowhere)
+
 
 
 
@@ -25,4 +44,3 @@ SELECT (neg) IF (1*/ (prn mfn)) ;
 # http://kevindonnelly.org.uk/2010/05/constraint-grammar-tutorial/
 # https://wiki.apertium.org/wiki/Constraint_Grammar
 # https://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
-

@@ -1,6 +1,6 @@
 Alphabet
- A B Ɓ D Ɗ E F G H I J K L M N Ŋ O P R S T U W Y Ƴ
- a b ɓ d ɗ e f g h i j k l m n ŋ o p r s t u w y ƴ '
+ A B Ɓ C D Ɗ E F G H I J K L M N Ŋ O P R S T U W Y Ƴ
+ a b ɓ c d ɗ e f g h i j k l m n ŋ o p r s t u w y ƴ ʼ
  %{a%}:0 %{a%}:a
  %{b%}:0 %{b%}:b
  %{d%}:0 %{d%}:d
@@ -27,13 +27,12 @@ Vowel = A E I O U
 
 Rules
 
+
 "Plural ɓe class prefixer"
 c1:c2 <=> %{cl%_ɓe%}:0 %{plural%}:0 _ ;
 where c1 in ( d k p c b )
       c2 in ( r h f s w )
 matched ;
-
-! make rule to disambiguate prn 1p sg emph from prn 1p pl excl
 
 ! Resources:
 ! https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
