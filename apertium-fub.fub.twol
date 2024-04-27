@@ -1,24 +1,6 @@
 Alphabet
  A B Ɓ C D Ɗ E F G H I J K L M N Ŋ O P R S T U W Y Ƴ
- a b ɓ c d ɗ e f g h i j k l m n ŋ o p r s t u w y ƴ ʼ
- %{a%}:0 %{a%}:a
- %{b%}:0 %{b%}:b
- %{d%}:0 %{d%}:d
- %{ɗ%}:0 %{ɗ%}:ɗ
- %{e%}:0 %{e%}:e
- %{i%}:0 %{i%}:i
- %{j%}:0 %{j%}:j
- %{k%}:0 %{k%}:k
- %{l%}:0 %{l%}:l
- %{w%}:0 %{w%}:w
- %{plural%}:0
- %{cl%_be%}:0
- p:f
- k:h
- d:r
- c:s 
- b:w
- %{A%}:a %>:0  ;
+ a b ɓ c d ɗ e f g h i j k l m n ŋ o p r s t u w y ƴ ʼ ;
 
 Sets
 
@@ -26,7 +8,6 @@ Vowel = A E I O U
         a e i o u ;
 
 Rules
-
 
 "Plural ɓe class prefixer"
 c1:c2 <=> %{cl%_ɓe%}:0 %{plural%}:0 _ ;
